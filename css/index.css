@@ -110,7 +110,7 @@ header .logo {
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
     margin: 0 82px 0 0;
 }
@@ -247,3 +247,52 @@ footer {
   width: 420px;
   height: 300px;
 }
+
+/* tablet */
+
+@media ( max-width: 800px ){
+    .container {
+        width: 750px;
+        margin: auto;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .circle-logo {
+        display: none;
+    }
+
+    .middle-img {
+        width: 100%;
+    }
+    .cta .cta-text {
+        margin: 0;
+        width: 100%;
+    }
+}
+
+
+/* mobile */
+
+@media ( max-width: 500px ) {
+    .container {
+        width: 100%;
+        margin: auto;
+    } 
+
+    /* header {
+        width: 80%;
+        display: flex;
+    }
+
+    .middle-img {
+        width: 90%;
+    } 
+} 
+   
+
+
